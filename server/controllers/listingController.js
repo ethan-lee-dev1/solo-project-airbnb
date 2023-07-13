@@ -7,9 +7,9 @@ const listingController = {};
 
 listingController.getListings = async (req, res, next) => {
   Listing.find()
+    .limit(200)
     .exec()
     .then((listing) => {
-      console.log(listing);
       res.locals = listing;
       next();
     })
