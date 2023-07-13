@@ -1,4 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbit&family=Space+Mono&display=swap");
+
+* {
+  background-color: #91b247;
+  font-family: "Orbit", sans-serif;
+  font-family: "Space Mono", monospace;
+}
+
 .navbar {
   display: flex;
-  background-color: red;
+  justify-content: space-evenly;
+  background-color: #80a142;
+}
+
+img {
+  height: 500px;
+  border-radius: 50px;
+  margin: 100px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.column {
+  flex-basis: 50%; /* Each column takes 50% of the width */
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 25px;
+}
+
+li {
+  list-style: none;
+}
+
+#quote {
+  margin-top: auto;
+  margin-bottom: auto;
 }

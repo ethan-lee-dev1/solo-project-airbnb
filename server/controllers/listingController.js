@@ -18,6 +18,18 @@ listingController.getListings = async (req, res, next) => {
     });
 };
 
+listingController.getOneListing = async (req, res, next) => {
+  Listing.find()
+    .exec()
+    .then((listing) => {
+      res.locals = listing;
+      next();
+    })
+    .catch((err) => {
+      next(err);
+    });
+};
+
 listingController.getSpecies = (req, res, next) => {
   // write code here
 

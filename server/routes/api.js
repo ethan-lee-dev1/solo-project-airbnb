@@ -9,6 +9,11 @@ router.get("/", listingController.getListings, (req, res) => {
   res.status(200).json(res.locals);
 });
 
+router.get("/:id", listingController.getOneListing, (req, res) => {
+  // console.log(res);
+  res.status(200).json(res.locals);
+});
+
 router.get("/species", listingController.getSpecies, (req, res) =>
   res.status(200).json({})
 );
