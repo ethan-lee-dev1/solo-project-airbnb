@@ -5,7 +5,7 @@ export const Navbar = () => {
     <ul className="navbar">
       <h1 className="navbar">Welcome to StayBnB!</h1>
       <span className="navbar" id="quote">
-        Find your perfect stay, wherever you may roam.
+        Find your perfect stay, wherever you may roam!
       </span>
     </ul>
   );
