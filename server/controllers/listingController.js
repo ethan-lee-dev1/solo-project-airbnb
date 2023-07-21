@@ -1,4 +1,5 @@
 /* eslint-disable quotes */
+const { ids } = require("webpack");
 const Listing = require("../models/listingModel");
 
 // const { Person } = require("../models/starWarsModels");
@@ -19,7 +20,8 @@ listingController.getListings = async (req, res, next) => {
 };
 
 listingController.getOneListing = async (req, res, next) => {
-  Listing.find()
+  const id = req.params.id;
+  Listing.findOne({ listing_url: `https://www.airbnb.com/rooms/${id}` })
     .exec()
     .then((listing) => {
       res.locals = listing;

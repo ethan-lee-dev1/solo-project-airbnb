@@ -67,7 +67,7 @@ const AirBnB = () => {
             <li key={airBnB._id}>
               <div className="flex-container">
                 <div className="column">
-                  <NavLink to="/detail" props={airBnB._id}>
+                  <NavLink to={`/detail/${airBnB._id}`}>
                     <img src={airBnB.images.picture_url}></img>
                   </NavLink>
                 </div>

@@ -11,7 +11,7 @@ const App = (props) => {
         <Switch>
           <Route exact path="/" component={AirBnB} />
           {/* <Route exact path="/create" component={CreateCharacter} /> */}
-          <Route exact path="/detail" component={AirBnBdetail} />
+          <Route exact path="/detail/:id" component={AirBnBdetail} />
         </Switch>
       </main>
     </div>
