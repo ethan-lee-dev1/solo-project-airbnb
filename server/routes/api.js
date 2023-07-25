@@ -5,12 +5,10 @@ const listingController = require("../controllers/listingController");
 const router = express.Router();
 
 router.get("/", listingController.getListings, (req, res) => {
-  // console.log(res);
   res.status(200).json(res.locals);
 });
 
 router.get("/:id", listingController.getOneListing, (req, res) => {
-  // console.log(res);
   res.status(200).json(res.locals);
 });
 

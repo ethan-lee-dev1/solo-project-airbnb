@@ -37,3 +37,12 @@ li {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.highlight {
+  font-weight: bold;
+  padding: 2px 5px;
+}
+
+.singleListing {
+  width: 70vw;
+}
